@@ -1,0 +1,50 @@
+.text-box h3 {
+    color: pink;
+  }
+  
+  #greycol {
+    color: grey;
+  }
+  
+  .text-box div p {
+    color: red;
+  }
+  
+  .text-box p:nth-of-type(2) {
+    color: green;
+  }
+  
+  .text-box .yellow {
+    color: yellow;
+  }
+
+
+
+
+  .day li {
+    padding: 10px;
+    margin-bottom: 5px;
+    list-style-type: none;
+    transition: all 0.3s ease;
+}
+
+/* Кольори для різних днів */
+#monday li { background-color: lightblue; }
+#tuesday li { background-color: lightgreen; }
+#wednesday li { background-color: lightyellow; }
+#thursday li { background-color: lightcoral; }
+#friday li { background-color: lightgrey; }
+
+/* Псевдокласи стану */
+.day li:hover { background-color: darkgrey; }
+.day li:active { transform: scale(1.1); }
+.day li:focus { outline: 2px solid gold; }
+.day li:first-child:hover { font-weight: bold; }
+.day li:not(:last-child) { border-bottom: 1px dashed; }
+
+/* Структурні псевдокласи */
+.day li:first-of-type { border-top: 3px solid black; }
+.day li:last-of-type { border-bottom: 3px solid black; }
+.day li:nth-child(odd) { color: darkblue; }
+.day li:nth-last-child(2) { background-color: lightpink; }
+.day li:only-child { background-color: violet; }
